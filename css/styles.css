@@ -1,17 +1,19 @@
 :root{
     --accent-color: #4D5AE5;
     --hero-text-color:  #FFFFFF;
-    --text-color: #434455;
-    --dominant-color: #2E2F42;
+    --dominant-color: #434455;
+    --text-color: #2E2F42;
     --bottom-text-color: #F4F4FD;
     --light-bg-color: #F4F4FD;
     --hover-focus-color: #404BBF;
     --photo-bg-color: #FFFFFF;
+    --dark-bg-color: #2E2F42;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--dominant-color);
+    background-color: var(--photo-bg-color);
 }
 
 .list{
@@ -41,28 +43,29 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--text-color);
 }
 
 .simple-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
 
-.accent-logo{
-    color: var(--accent-color);
-}
-
-/* HEADER */
-.header-logo {
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--dominant-color);
+    color: var(--accent-color);
+}
+
+
+/* HEADER */
+.header-accent-logo{
+    color: var(--text-color);
 }
 
 .list-item {
@@ -70,18 +73,22 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--dominant-color);
+    color: var(--text-color);
 }
 .list-item:hover,
 .list-item:focus{
     color: var(--hover-focus-color);
 }
 
+.adress-title{
+font-style: normal;
+}
+
 .adress-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--dominant-color);
 }
 .adress-item:hover,
 .adress-item:focus{
@@ -90,7 +97,7 @@ body{
 
 /* HERO */
 .hero {
-    background-color: var(--dominant-color);
+    background-color: var(--dark-bg-color);
 }
 
 .hero-title {
@@ -129,6 +136,7 @@ body{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--text-color);
 }
 
 
@@ -144,6 +152,7 @@ body{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--text-color);
 }
 
 .team-item{
@@ -151,18 +160,12 @@ body{
 }
 
 /* FOOTER */
-.bottom-logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.footer-accent-logo{
     color: var(--bottom-text-color);
 }
 
 .footer {
-    background-color: var(--dominant-color);
+    background-color: var(--dark-bg-color);
 }
 
 .footer-text {
